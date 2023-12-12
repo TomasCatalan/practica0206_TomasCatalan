@@ -10,8 +10,13 @@ def tabla_mult_fichero():
     
     num = int(input("INtroduce un numero entre 1 y 10"))
 
-    nombre_fichero = "Tabla del " + str(num) + ".txt" #La varieable tiene q ser un string
+    nombre_fichero = "Tabla-" + str(num) + ".txt" #La varieable tiene q ser un string
 
-    print(nombre_fichero)
+    with open(nombre_fichero, "w") as fichero:
+        for x in range(1,11):
+
+            fichero.write(str(num) + " * " + str(x) + "\n")  #La varieable tiene q ser un string
+
+    return
 
 tabla_mult_fichero()
