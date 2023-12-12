@@ -20,7 +20,7 @@ def tabla_mult_fichero_comp():
 
     except FileNotFoundError:
 
-        print("ERROR: no existe")
+        print("ERROR: el archivo no existe")
 
     return
 
