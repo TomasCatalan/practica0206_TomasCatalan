@@ -13,12 +13,14 @@ def tabla_mult_fichero_comp():
     nombre_fichero = "Tabla-" + str(num) + ".txt" #La varieable tiene q ser un string
 
     try:
-        with open(nombre_fichero, "w") as fichero:
+        with open(nombre_fichero, "r") as fichero:
             for x in range(1,11):
 
-                fichero.write(str(num) + " * " + str(x) + "\n")  #La varieable tiene q ser un string
+                fichero.read()  #La varieable tiene q ser un string
 
-    except FileExistsError:
+    except FileNotFoundError:
+
+        print("ERROR: no existe")
 
     return
 
