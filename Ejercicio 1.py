@@ -3,14 +3,14 @@ def tabla_mult_fichero():
     tabla-n.txt la tabla de multiplicar de ese número
     
     Parametros:
-        -Num: un numero entero, entre 1 y 10
+        -Numero: un numero entero, entre 1 y 10
         
     Salida:
         - Fichero con la tabla de multiplicar del numero"""
     
     num = int(input("INtroduce un numero entre 1 y 10"))
 
-    nombre_fichero = "Tabla del" + num + ".txt"
+    nombre_fichero = "Tabla del " + str(num) + ".txt" #La varieable tiene q ser un string
 
     print(nombre_fichero)
 
