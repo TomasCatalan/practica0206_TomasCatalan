@@ -6,4 +6,4 @@ x = str(urllib.request.urlopen(link).read())
 y = x.split()
 z = len(y)
 
-print(z)
+print("El numero de palabras del fichero es", z)
