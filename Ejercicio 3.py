@@ -5,11 +5,6 @@ def linea_tabla_mult():
     
     nombre_fichero = "Tabla-" + str(n) + ".txt"
 
-    with open(nombre_fichero, "w") as fichero:
-        for x in range(1,11):
-
-            fichero.write(str(n) + " * " + str(x) + "\n")
-
     try:
         with open(nombre_fichero, 'r') as archivo:
                 lineas = archivo.readlines()
